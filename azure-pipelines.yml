@@ -9,10 +9,10 @@ steps:
 
 - script: |
     # Navigate to the directory where your index.html file resides
-    cd path/to/your/html/file
+    cd /
 
     # Install any dependencies if needed (for example, if you're using npm or yarn)
-    # npm install
+    npm install
 
     # Start a simple HTTP server to serve your index.html file
     python -m http.server 8080

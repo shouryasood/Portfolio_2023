@@ -5,7 +5,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: Checkout@2
+- checkout: self
 
 - script: |
     # Navigate to the directory where your index.html file resides

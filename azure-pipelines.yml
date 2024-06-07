@@ -1,0 +1,19 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: Checkout@2
+
+- script: |
+    # Navigate to the directory where your index.html file resides
+    cd path/to/your/html/file
+
+    # Install any dependencies if needed (for example, if you're using npm or yarn)
+    # npm install
+
+    # Start a simple HTTP server to serve your index.html file
+    python -m http.server 8080
+  displayName: 'Run index.html'
